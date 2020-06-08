@@ -1,0 +1,61 @@
+/* .banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+ */
+
+.container-hello {
+   background: #fff;
+   border-radius: 30px;
+   box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+   width: 30vw;
+   height: 60vh;
+   min-block-size: 200px;
+}
+
+/* Formulario cores e centralização */
+
+.login-sec {
+   padding: 90px 30px;
+   position: relative;
+}
+
+.login-sec .copy-text {
+   position: absolute;
+   width: 50%;
+   bottom: 0px;
+   font-size: 13px;
+   text-align: center;
+}
+
+.login-sec .copy-text i {
+   color: #FEB58A;
+}
+
+.login-sec .copy-text a {
+   color: #E36262;
+}
+
+.login-sec h2 {
+   margin-bottom: 30px;
+   font-weight: 800;
+   font-size: 30px;
+   color: #3949ab;
+}
+
+.login-sec h2:after {
+   content: " ";
+   width: 100px;
+   height: 5px;
+   background: #FEB58A;
+   display: block;
+   margin-top: 20px;
+   border-radius: 3px;
+   margin-left: auto;
+   margin-right: auto
+}
+
+.btn-login {
+   background: #E36262;
+   color: #fff;
+   font-weight: 600;
+}
+
+/*  */

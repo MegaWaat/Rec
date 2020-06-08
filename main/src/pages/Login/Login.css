@@ -1,0 +1,10 @@
+.container-login {
+  background: #ffff;
+  border-radius: 30px;
+  box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 30vw;
+  height: 60vh;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}

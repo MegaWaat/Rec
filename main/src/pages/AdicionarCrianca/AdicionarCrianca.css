@@ -1,0 +1,9 @@
+.container-adicionar-crianca {
+    width: 40vw;
+    height: 40vh;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
