@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom'
 import './AdicionarCrianca.css'
 export default (props) =>(
     <div>
+
+
+ 
+<section  class = "menu-block ">
+
+<div class="col  ">
+
+<div class="container ">
+  
+<div class="box">
 <nav class="navbar navbar-light bg-light">
 <button type="button" class="btn btn-primary">Voltar</button>
   <h5 class="navbar-brand">Adicionando Criança </h5>
@@ -11,12 +21,6 @@ export default (props) =>(
     
   </form>
 </nav>
-
- 
-<section  class = "menu-block ">
-
-<div class="col  ">
-<div class="container ">
   {/* Elemento centralizador */}
   <form>
   <div class="form-row">
@@ -35,7 +39,7 @@ export default (props) =>(
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputMae">Nome do Resposnsavel</label>
+      <label for="inputMae">Nome do Responsável</label>
       <input type="text" class="form-control" id="inputMae"></input>
     </div>
     <div class="form-group col-md-4">
@@ -71,6 +75,7 @@ export default (props) =>(
   
 </div>
 </form>
+</div>
 </div>
 </div>
 </section>

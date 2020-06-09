@@ -8,7 +8,7 @@ export default (props) =>(
  <section class = "menu-block">
  <div class="container">
   {/* Conteiner branco do login */}
- 
+ <div class="box">
 <div class="row justify-content-center">
     <div class="col  login-sec">
   {/* Elemento centralizador */}
@@ -27,6 +27,7 @@ export default (props) =>(
 
      </div>
      
+</div>
 </div>
 </div>
  </section>
