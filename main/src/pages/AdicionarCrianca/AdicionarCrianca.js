@@ -5,14 +5,9 @@ export default (props) =>(
     <div>
 
 
- 
-<section  class = "menu-block ">
+
 
 <div class="col  ">
-
-<div class="container ">
-  
-<div class="box">
 <nav class="navbar navbar-light bg-light">
 <button type="button" class="btn btn-primary">Voltar</button>
   <h5 class="navbar-brand">Adicionando Criança </h5>
@@ -21,6 +16,10 @@ export default (props) =>(
     
   </form>
 </nav>
+<div class="container ">
+  
+<div class="adicionar-crianca-box">
+
   {/* Elemento centralizador */}
   <form>
   <div class="form-row">
@@ -78,7 +77,7 @@ export default (props) =>(
 </div>
 </div>
 </div>
-</section>
+
 
 
 </div>);

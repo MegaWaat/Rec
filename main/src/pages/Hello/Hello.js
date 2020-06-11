@@ -2,8 +2,11 @@ import React from 'react'
 import './Hello.css'
 import { Link } from 'react-router-dom'
 
-export default (props) => (
+function App() {
+  return (
 
+    <div className="App">
+     
 <div>
 <div class="container">
         <div class="box">
@@ -37,7 +40,7 @@ export default (props) => (
       </div>
       <Link to="/Login">
       <button type="submit" class="btn btn-primary float-center">Entrada Psicologo</button>
-    </Link> 
+   </Link>
         </div>
         
       </div>
@@ -50,5 +53,8 @@ export default (props) => (
 
   </div>
 
+    </div>
+  );
+}
 
-);
+export default App;
