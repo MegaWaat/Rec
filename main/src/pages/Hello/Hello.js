@@ -8,7 +8,7 @@ function App() {
     <div className="App">
      
 <div>
-<div class="container">
+<div class="container-h">
         <div class="box">
         <div class="col  login-sec">
         {/* Elemento centralizador */}

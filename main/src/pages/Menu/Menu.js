@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default (props) =>(
   <div>
  <section class = "menu-block">
- <div class="container">
+ <div class="container-h">
   {/* Conteiner branco do login */}
  <div class="box">
 <div class="row justify-content-center">
