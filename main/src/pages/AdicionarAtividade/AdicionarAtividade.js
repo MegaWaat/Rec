@@ -1,5 +1,4 @@
 import React from 'react'
-/* import { Link } from 'react-router-dom' */
 import "./AdicionarAtividade.css"
 import { Link } from 'react-router-dom'
 export default (props) => (
@@ -51,7 +50,7 @@ export default (props) => (
         <div class="form-check">
           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2"></input>
           <label class="form-check-label" for="exampleRadios2">
-            Feliz
+            Felicidade
   </label>
         </div>
         <div class="form-check">
@@ -63,10 +62,10 @@ export default (props) => (
         <div class="form-check">
           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2"></input>
           <label class="form-check-label" for="exampleRadios2">
-            Medo
+            Raiva
   </label>
         </div>
-        <Link to="/Menu">
+        <Link to="/AssociaImagemPalavra">
           <button type="button" class="btn btn-primary">Proximo</button>
         </Link>
       </div>

@@ -8,11 +8,11 @@ import App from './App'
 import Hello from './pages/Hello/Hello'
 import Login from './pages/Login/Login'
 import Menu from './pages/Menu/Menu'
-
 import AtividadeMenu from './pages/AtividadeMenu/AtividadeMenu'
 import CriancaMenu from './pages/CriancaMenu/CriancaMenu'
 import AdicionarCrianca  from './pages/AdicionarCrianca/AdicionarCrianca'
 import AdicionarAtividade  from './pages/AdicionarAtividade/AdicionarAtividade'
+import AssociaImagemPalavra  from './pages/AssociaImagemPalavra/AssociaImagemPalavra'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
@@ -27,6 +27,7 @@ ReactDOM.render(
             <Route exact path='/AtividadeMenu' component = {AtividadeMenu}/>
             <Route exact path='/AdicionarCrianca' component = {AdicionarCrianca}/>
             <Route exact path='/AdicionarAtividade' component = {AdicionarAtividade}/>
+            <Route exact path='/AssociaImagemPalavra' component = {AssociaImagemPalavra}/>
         </Switch>
     </BrowserRouter>,
     
