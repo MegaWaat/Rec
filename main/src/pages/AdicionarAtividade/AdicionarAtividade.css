@@ -1,0 +1,18 @@
+.adicionar-atividade-box {
+    width: 700px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-atividade {
+    width: 100vw;
+    height: 90vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}

@@ -49,7 +49,7 @@ export default (props) => (
         <p></p>
         <p></p>
         <p></p>
-        <Link to="/Menu">
+        <Link to="/AdicionarAtividade">
           <button type="button" class="btn btn-primary ">Adicionar nova atividade</button>
         </Link>
 
