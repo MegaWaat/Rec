@@ -11,11 +11,6 @@ export default (props) => (
       </Link>
       <h1 class="navbar-brand">Adicionar atividade</h1>
       <form class="form-inline">
-
-        <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar" aria-label="Pesquisar"></input>
-        <button class="btn btn-outline-success my-2 my-sm-0 flat-center" type="submit">Pesquisar</button>
-
-
       </form>
     </nav>
     {/* --------------------- */}
