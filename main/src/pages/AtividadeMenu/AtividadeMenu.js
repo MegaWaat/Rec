@@ -1,10 +1,13 @@
 import React from 'react'
 /* import { Link } from 'react-router-dom' */
 import "./AtividadeMenu.css"
+import { Link } from 'react-router-dom'
 export default (props) => (
   <div>
   <nav class="navbar navbar-light bg-light">
+  <Link to="/Menu">
   <button type="button" class="btn btn-primary">Voltar</button>
+  </Link>
     <h5 class="navbar-brand">Menu atividades </h5>
 
     <form class="form-inline">

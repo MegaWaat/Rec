@@ -4,13 +4,13 @@ import './CriancaMenu.css'
 export default (props) => (
   <div>
     <nav class="navbar navbar-light bg-light">
+    <Link to="/Menu">
     <button type="button" class="btn btn-primary">Voltar</button>
-      <h5 class="navbar-brand">Crianças </h5>
-
+      
+    </Link>
+    <h1 class="navbar-brand">Menu Crianças</h1>
       <form class="form-inline">
-        <Link to="/AdicionarCrianca">
-          <button type="submit" class="btn btn-outline-primary my-2 my-sm-0 flat-center">Adicionar</button>
-        </Link>
+        
         <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar" aria-label="Pesquisar"></input>
         <button class="btn btn-outline-success my-2 my-sm-0 flat-center" type="submit">Pesquisar</button>
         
@@ -23,6 +23,10 @@ export default (props) => (
   Kevin Cavalheiro
 
 </div>
+
+<Link to="/AdicionarCrianca">
+          <button type="submit" class="btn btn-outline-primary my-2 my-sm-0 flat-center">Adicionar</button>
+        </Link>
 
 
   </div>
