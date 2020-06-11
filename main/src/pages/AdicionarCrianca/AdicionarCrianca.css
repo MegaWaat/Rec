@@ -1,10 +1,12 @@
-.adicionar-crianca-box{
-    
+.adicionar-crianca-box {
         width: 700px;
         height: 400px;
         background: #fff;
-     
+        border-radius: 10px;
+        box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+        padding: 20px;
 }
+
 .container2 {
         width: 100vw;
         height: 90vh;
@@ -13,4 +15,4 @@
         flex-direction: row;
         justify-content: center;
         align-items: center
-     }
+}

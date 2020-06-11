@@ -1,6 +1,7 @@
 body {
    margin: 0px
 }
+
 .container-h {
    width: 100vw;
    height: 100vh;
@@ -10,12 +11,14 @@ body {
    justify-content: center;
    align-items: center
 }
+
 .box {
    width: 400px;
    height: 400px;
    background: #fff;
+   border-radius: 10px;
+   box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
 }
- 
 
 .login-sec {
    padding: 90px 30px;
@@ -55,6 +58,4 @@ body {
    border-radius: 3px;
    margin-left: auto;
    margin-right: auto
-} 
-
-
+}
