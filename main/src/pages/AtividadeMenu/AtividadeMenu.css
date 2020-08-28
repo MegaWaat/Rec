@@ -1,7 +1,7 @@
 .menu-atividade-box{
     
-    width: 900px;
-    height: 500px;
+    width: 1400px;
+    height: 600px;
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -10,7 +10,7 @@
 .container-atividade-menu {
     width: 100vw;
     height: 90vh;
-    background: #6C7A89;
+    background: #6423D4 ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,6 +19,6 @@
  .atividades-box{
      background-color: #6C7A89;
  }
- .card{
-     width: 200px;
+ .color1{
+     background-color: #6C7A89;
  }

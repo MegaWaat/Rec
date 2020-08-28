@@ -23,7 +23,7 @@ export default (props) => (
           <div class="form-group">
             <label for="formGroupExampleInput2">Tipo:</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked></input>
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" ></input>
               <label class="form-check-label" for="exampleRadios1">
                 Apresentação
   </label>
@@ -35,8 +35,8 @@ export default (props) => (
   </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2"></input>
-              <label class="form-check-label" for="exampleRadios2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="opcao3"></input>
+              <label class="form-check-label" for="exampleRadios3">
                 Associação de imagens
   </label>
             </div>
@@ -48,22 +48,29 @@ export default (props) => (
         {/*  */}
         <label for="formGroupExampleInput2">Emoção Trabalhada:</label>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2"></input>
-          <label class="form-check-label" for="exampleRadios2">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="opcao2"></input>
+          <label class="form-check-label" for="exampleRadios4">
             Felicidade
   </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2"></input>
-          <label class="form-check-label" for="exampleRadios2">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="opcao2"></input>
+          <label class="form-check-label" for="exampleRadios5">
             Tristeza
   </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2"></input>
-          <label class="form-check-label" for="exampleRadios2">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="opcao2"></input>
+          <label class="form-check-label" for="exampleRadios6">
             Raiva
   </label>
+  </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="opcao2"></input>
+          <label class="form-check-label" for="exampleRadios7">
+            Medo
+  </label>
+  
         </div>
         <Link to="/AssociaImagemPalavra">
           <button type="button" class="btn btn-primary">Proximo</button>
