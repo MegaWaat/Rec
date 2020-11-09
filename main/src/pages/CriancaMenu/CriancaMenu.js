@@ -20,7 +20,7 @@ export default (props) => (
     <h1> </h1>
     <div class="chip">
       <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Person" width="96" height="96"></img>
-  Kevin Cavalheiro
+  Nayara
 
 </div>
 
