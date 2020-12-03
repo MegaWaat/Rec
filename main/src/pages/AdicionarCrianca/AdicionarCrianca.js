@@ -46,7 +46,7 @@ export default (props) => (
               </select>
             </div>
             <div class="form-group col-md-2">
-              <label for="inputZip">Idade</label>
+              <label for="inputZip">Nascimento</label>
               <input type="text" class="form-control" id="inputZip"></input>
             </div>
           </div>
