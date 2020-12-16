@@ -53,7 +53,7 @@ export default (props) => (
 
           <div class="custom-file">
             <input type="file" class="custom-file-input" id="inputGroupFile01"></input>
-            <label class="custom-file-label" for="inputGrouspFile01">Selecione a foto</label>
+            <label class="custom-file-label" for="inputGroupFile01">Selecione um arquivo para foto</label>
           </div>
           <div class="form-group">
             <div class="form-check">
