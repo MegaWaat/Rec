@@ -1,8 +1,42 @@
-import React from 'react'
+import React, {useState, useEffect}from 'react'
 import { Link } from 'react-router-dom'
 import './AdicionarCrianca.css'
-export default (props) => (
-  <div>
+import Axios from 'axios'
+
+
+
+export default (props) => {
+    const [criNome,setCriNome] = useState("");
+    const [criObservacao,setCriObservacao] = useState("");
+    const [criResponsavel,setCriResponsavel] = useState("");
+    const [criNascimento,setCriNascimento] = useState("");
+    const [criGrau,setCrigrau] = useState("leve"); 
+    const [criId,setCriId] = useState("");
+    //------------
+    const inserir = async(event)=>{
+      event.preventDefault()
+      // procurar sobre false e falsy no javascript
+      if(criNome && criObservacao && criResponsavel && criNascimento && criGrau){
+        await Axios.post(
+          'http://localhost:3001/create',
+          {criNome, criObservacao, criResponsavel, criNascimento, criGrau}
+        )
+      } else {
+        window.alert('Prencha todos os campos')
+      }     
+    }
+     //-------------------------
+    /*  const deleteEmployee = (cirId) => {
+      Axios.delete(`http://localhost:3001/delete/${criId}`).then((response) => {
+        setEmployeeList(
+          employeeList.filter((val) => {
+            return val.id != id;
+          })
+        );
+      });
+    };  */   
+    //-------------
+  return(<div>
 
     <nav class="navbar navbar-light bg-light">
       <Link to="/CriancaMenu">
@@ -19,35 +53,37 @@ export default (props) => (
         <form>
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label for="inputEmail4">Nome</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Nome"></input>
+              <label for="inputEmail4" >Nome</label>
+              <input onChange={(e)=>{setCriNome(e.target.value)}} 
+              type="text" class="form-control" id="inputEmail4" name="criNome" placeholder="Nome">
+              </input>
             </div>
             <div class="form-group col-md-8">
               <label for="inputPassword4">Codigo de Acesso</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="Codigo de Acesso"></input>
+              <input onChange={(e)=>{setCriId(e.target.value)}}type="text" class="form-control" id="inputPassword4" placeholder="Codigo de Acesso"></input>
             </div>
           </div>
           <div class="form-group">
             <label for="inputobservacoes">Observações</label>
-            <input type="text" class="form-control" id="inputObservacoes" placeholder="Detalhar Criança"></input>
+            <input onChange={(e)=>{setCriObservacao(e.target.value)}}type="text" class="form-control" id="inputObservacoes" placeholder="Detalhar Criança"></input>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputMae">Nome do Responsável</label>
-              <input type="text" class="form-control" id="inputMae"></input>
+              <input onChange={(e)=>{setCriResponsavel(e.target.value)}}type="text" class="form-control" id="inputMae"></input>
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">Grau</label>
-              <select id="inputState" class="form-control">
-                <option selected>Severo</option>
-                <option selected>Moderado</option>
-                <option selected>Leve</option>
+              <select onChange={(e)=>{setCrigrau(e.target.value)}} value={criGrau} id="inputState" class="form-control">
                 <option>...</option>
+                <option value = "severo" selected>Severo</option>
+                <option value = "moderado"selected>Moderado</option>
+                <option value = "leve"selected>Leve</option>
               </select>
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Nascimento</label>
-              <input type="text" class="form-control" id="inputZip"></input>
+              <input onChange={(e)=>{setCriNascimento(e.target.value)}}type="text" class="form-control" id="inputZip"></input>
             </div>
           </div>
 
@@ -63,9 +99,9 @@ export default (props) => (
       </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Adicionar</button>
+          <button  Ontype="submit" class="btn btn-primary" onClick ={(evt) => inserir(evt)} >Adicionar</button>
+          <button  Ontype="submit" class="btn btn-primary" onClick ={deleteEmployee} >Deletar</button>
           <div class="input-group mb-3">
-
 
           </div>
         </form>
@@ -75,4 +111,4 @@ export default (props) => (
 
 
 
-  </div>);
+  </div>)};
