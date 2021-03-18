@@ -15,3 +15,18 @@
   width: 50px;
   border-radius: 50%;
 }
+.table-crianca{
+  width:80%;
+  margin:0 auto;
+  border:0;
+  box-shadow: 0 5px 30px darkgrey;
+  border-spacing: 0;
+}
+.card{
+  width: fit-content;
+  height: fit-content;
+}
+.card-deck{
+  width: fit-content;
+  height: fit-content;
+}

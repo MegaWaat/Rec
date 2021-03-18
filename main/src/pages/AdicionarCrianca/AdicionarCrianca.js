@@ -10,31 +10,25 @@ export default (props) => {
     const [criObservacao,setCriObservacao] = useState("");
     const [criResponsavel,setCriResponsavel] = useState("");
     const [criNascimento,setCriNascimento] = useState("");
-    const [criGrau,setCrigrau] = useState("leve"); 
-    const [criId,setCriId] = useState("");
+    const [criGrau,setCrigrau] = useState(""); 
+    
     //------------
     const inserir = async(event)=>{
       event.preventDefault()
-      // procurar sobre false e falsy no javascript
+      // procurar sobre false e falsy no javascriptyy
       if(criNome && criObservacao && criResponsavel && criNascimento && criGrau){
         await Axios.post(
           'http://localhost:3001/create',
-          {criNome, criObservacao, criResponsavel, criNascimento, criGrau}
+          {criNome, criObservacao, criResponsavel, criNascimento, criGrau},
+          
+          window.alert('Cadastrado')
         )
       } else {
         window.alert('Prencha todos os campos')
       }     
     }
      //-------------------------
-    /*  const deleteEmployee = (cirId) => {
-      Axios.delete(`http://localhost:3001/delete/${criId}`).then((response) => {
-        setEmployeeList(
-          employeeList.filter((val) => {
-            return val.id != id;
-          })
-        );
-      });
-    };  */   
+        
     //-------------
   return(<div>
 
@@ -59,8 +53,8 @@ export default (props) => {
               </input>
             </div>
             <div class="form-group col-md-8">
-              <label for="inputPassword4">Codigo de Acesso</label>
-              <input onChange={(e)=>{setCriId(e.target.value)}}type="text" class="form-control" id="inputPassword4" placeholder="Codigo de Acesso"></input>
+              <label for="inputPassword4">Código de Acesso</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Codigo de Acesso"></input>
             </div>
           </div>
           <div class="form-group">
@@ -95,12 +89,13 @@ export default (props) => {
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck"></input>
               <label class="form-check-label" for="gridCheck">
-                Criança com tratamento ativo
+                Criança com ativo tratamento
       </label>
             </div>
           </div>
           <button  Ontype="submit" class="btn btn-primary" onClick ={(evt) => inserir(evt)} >Adicionar</button>
-          <button  Ontype="submit" class="btn btn-primary" onClick ={deleteEmployee} >Deletar</button>
+          <p></p>
+          
           <div class="input-group mb-3">
 
           </div>

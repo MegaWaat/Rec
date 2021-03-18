@@ -13,7 +13,7 @@ export default (props) =>(
     <div class="col  login-sec">
   {/* Elemento centralizador */}
   
-        <h1>Por onde quer começar?</h1>
+        <h1>Por onde voce quer começar?</h1>
      <form class="menu-form">
         <Link  to = "/CriancaMenu">
           <button type="submit" class="btn btn-primary btn-lg btn-block float-center">Crianças</button>
