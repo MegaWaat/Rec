@@ -53,8 +53,8 @@ export default (props) => {
 
     {criLista.map((val) => {
       return (
-       <CardCrianca val={val} handleDeletar={handleDeletar}/>
-        /* <div class="table-crianca">
+       //<CardCrianca val={val} handleDeletar={handleDeletar}/>
+         <div class="table-crianca">
           
            <table class="table table-striped table-dark">
            <thead>
@@ -76,13 +76,13 @@ export default (props) => {
                <td>{val.graucri} </td>
                <td>{val.nascimentocri} </td>
                <div >
-               <button onClick ={(evt) => deletar(evt)}type="button" class="btn btn-danger" >Excluir</button>
-                 
+               
+               <button type="button" class="btn btn-primary">Deletar</button>
                   </div>
              </tr>
              </tbody>
              </table>
-           </div> */
+           </div> 
 
       )
     }
